@@ -27,14 +27,14 @@ class FirstCompositionalViewController: UIViewController {
     }
     
     func createComositionalLayout() -> UICollectionViewCompositionalLayout {
-        // ⭐️ 아이템의 사이즈는 컨테이너 뷰(그룹)의 너비 33%, 높이 100%로 맞춤.
+        // ⭐️ 아이템의 사이즈는 컨테이너 뷰(그룹) 대비 너비 33%, 높이 100%로 맞춤.
         let itemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(0.33),
             heightDimension: .fractionalHeight(1.0)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        // ⭐️ 그룹의 사이즈는 컨테이너 뷰(섹션)의 너비 100%, 높이 33%로 맞춤.
+        // ⭐️ 그룹의 사이즈는 컨테이너 뷰(섹션) 대비 너비 100%, 높이 33%로 맞춤.
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
             heightDimension: .fractionalWidth(0.33)

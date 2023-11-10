@@ -22,6 +22,7 @@
 		9EF4E3E12AFD2C4C00CE17B7 /* NumberData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4E3E02AFD2C4C00CE17B7 /* NumberData.swift */; };
 		9EF4E3E32AFD329B00CE17B7 /* FirstCompCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4E3E22AFD329B00CE17B7 /* FirstCompCell.swift */; };
 		9EF4E3E52AFD3D7600CE17B7 /* SecondCompCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4E3E42AFD3D7600CE17B7 /* SecondCompCell.swift */; };
+		9EF4E3E72AFDBF8D00CE17B7 /* ThirdCompCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4E3E62AFDBF8D00CE17B7 /* ThirdCompCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9EF4E3E02AFD2C4C00CE17B7 /* NumberData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberData.swift; sourceTree = "<group>"; };
 		9EF4E3E22AFD329B00CE17B7 /* FirstCompCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCompCell.swift; sourceTree = "<group>"; };
 		9EF4E3E42AFD3D7600CE17B7 /* SecondCompCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCompCell.swift; sourceTree = "<group>"; };
+		9EF4E3E62AFDBF8D00CE17B7 /* ThirdCompCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCompCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				9EF4E3D72AFD290300CE17B7 /* ThirdCompositional.storyboard */,
 				9EF4E3D92AFD290F00CE17B7 /* ThirdCompositionalViewController.swift */,
+				9EF4E3E62AFDBF8D00CE17B7 /* ThirdCompCell.swift */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				9EF4E3E52AFD3D7600CE17B7 /* SecondCompCell.swift in Sources */,
 				9EF4E3B72AFD08E600CE17B7 /* AppDelegate.swift in Sources */,
 				9EF4E3D32AFD28EE00CE17B7 /* SecondCompositionalViewController.swift in Sources */,
+				9EF4E3E72AFDBF8D00CE17B7 /* ThirdCompCell.swift in Sources */,
 				9EF4E3E32AFD329B00CE17B7 /* FirstCompCell.swift in Sources */,
 				9EF4E3E12AFD2C4C00CE17B7 /* NumberData.swift in Sources */,
 				9EF4E3B92AFD08E600CE17B7 /* SceneDelegate.swift in Sources */,

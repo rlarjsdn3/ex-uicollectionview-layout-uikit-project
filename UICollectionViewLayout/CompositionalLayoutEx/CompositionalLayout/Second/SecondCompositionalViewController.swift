@@ -26,6 +26,7 @@ class SecondCompositionalViewController: UIViewController {
     }
     
     func createOneRowNestedGroupLayout() -> UICollectionViewCompositionalLayout {
+        // ⭐️ 아이템의 사이즈는 컨테이너 뷰(그룹) 대비 너비 70%, 높이 100%로 맞춤.
         let leadingItemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(0.7),
             heightDimension: .fractionalHeight(1.0)
@@ -33,6 +34,7 @@ class SecondCompositionalViewController: UIViewController {
         let leadingItem = NSCollectionLayoutItem(layoutSize: leadingItemSize)
 //        leadingItem.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
         
+        // ⭐️ 아이템의 사이즈는 컨테이너 뷰(그룹) 대비 너비 100%, 높이 50%로 맞춤.
         let trailingItemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
             heightDimension: .fractionalHeight(0.5)
@@ -40,6 +42,7 @@ class SecondCompositionalViewController: UIViewController {
         let trailingItem = NSCollectionLayoutItem(layoutSize: trailingItemSize)
 //        trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
         
+        // ⭐️ 그룹의 사이즈는 컨테이너 뷰(섹션) 대비 너비 30%, 높이 100%로 맞춤.
         let trailingGroupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(0.3),
             heightDimension: .fractionalHeight(1.0)
@@ -51,6 +54,7 @@ class SecondCompositionalViewController: UIViewController {
         )
         trailingGroup.interItemSpacing = .flexible(5.0)
         
+        // ⭐️ 그룹의 사이즈는 컨테이너 뷰(섹션) 대비 너비 100%, 높이 30%로 맞춤.
         let nestedGroupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
             heightDimension: .fractionalHeight(0.3)
@@ -65,6 +69,7 @@ class SecondCompositionalViewController: UIViewController {
         section.interGroupSpacing = 5.0
         section.contentInsets = NSDirectionalEdgeInsets(top: 0.0, leading: 5.0, bottom: 0.0, trailing: 5.0)
         
+        // ⭐️ 이렇게 구성된 아이템, 그룹과 섹션으로 CompositionalLayout 만듦.
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
